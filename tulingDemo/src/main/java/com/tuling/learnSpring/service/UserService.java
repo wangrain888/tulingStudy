@@ -1,5 +1,7 @@
 package com.tuling.learnSpring.service;
 
+import com.tuling.learnSpring.pojo.User;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,6 +12,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
+    @Value("wdy")
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
 
 }
