@@ -23,13 +23,13 @@ public class TestInterrupted {
 
 //            Thread.interrupted();
 
-            System.out.println("2222222222222");
+            System.out.println("666666666666666");
 
         });
 //        System.out.println();
         thread.start();
 
-        Thread.sleep(6666);
+        Thread.sleep(5000);
 //
         thread.interrupt();
         Thread.interrupted();
