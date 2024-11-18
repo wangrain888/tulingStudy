@@ -9,6 +9,7 @@ public class Test {
     public static void main(String[] args) {
         char c = 'a';
         char b = 'a';
+        char d = 'a';
 
         System.out.println("char size: " + Character.SIZE / 8 + " bytes");
         System.out.println("char memory usage: " + getObjectSize(c) + " bytes");
