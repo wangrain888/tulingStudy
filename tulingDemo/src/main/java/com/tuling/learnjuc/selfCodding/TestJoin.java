@@ -8,6 +8,7 @@ public class TestJoin {
         Wdy wdy1 = new Wdy("1");
         Wdy wdy2 = new Wdy(wdy1, "2");
         Wdy wdy3 = new Wdy(wdy2, "3");
+        Wdy wdy4 = new Wdy(wdy2, "3");
 
         wdy3.start();
         wdy2.start();
