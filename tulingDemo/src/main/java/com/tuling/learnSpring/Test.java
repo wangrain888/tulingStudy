@@ -19,7 +19,10 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        System.out.println(context.getBean("manService"));
+//        System.out.println(context.getBean("manService"));
+        System.out.println(context.getBean("womanService"));
+        System.out.println(context.getBean("womanService"));
+        System.out.println(context.getBean("womanService"));
 //        String message = context.getMessage("test", new Object[]{}, Locale.ENGLISH);
 //        System.out.println(message);
 //
@@ -31,24 +34,24 @@ public class Test {
 //        UserService userService = (UserService) context.getBean("userService");
 //        System.out.println(userService.getUser().getName());
 
-        SimpleMetadataReaderFactory metadataReaderFactory = new SimpleMetadataReaderFactory();
-
-        try {
-            MetadataReader metadataReader = metadataReaderFactory.getMetadataReader("com.tuling.learnSpring.service.UserService");
-
-            ClassMetadata classMetadata = metadataReader.getClassMetadata();
-
-            AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
-
-            for (String annotationType : annotationMetadata.getAnnotationTypes()) {
-                System.out.println(annotationType);
-            }
-
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        SimpleMetadataReaderFactory metadataReaderFactory = new SimpleMetadataReaderFactory();
+//
+//        try {
+//            MetadataReader metadataReader = metadataReaderFactory.getMetadataReader("com.tuling.learnSpring.service.UserService");
+//
+//            ClassMetadata classMetadata = metadataReader.getClassMetadata();
+//
+//            AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
+//
+//            for (String annotationType : annotationMetadata.getAnnotationTypes()) {
+//                System.out.println(annotationType);
+//            }
+//
+//
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
     }
